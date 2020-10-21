@@ -12,13 +12,10 @@
     <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>  
     <script type="text/javascript">
         $("#ip").click(function(){
-            var ip=returnCitySN.cip;
-            console.log(ip);
             $.ajax({
                     url: "https://restapi.amap.com/v3/ip?",
                     type: "GET",
                     data: {
-                        ip:ip,
                         key:"8ef48590c90112a8f402fa9169124a49"
                 },
                 dataType: "json",
